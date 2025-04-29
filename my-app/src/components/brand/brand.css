@@ -1,0 +1,21 @@
+.gpt3__brand {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    gap: 2rem; /* Create consistent spacing between items */
+    padding-top: 20px;
+    width: 100%;
+}
+
+.gpt3__brand div {
+    flex: 0 1 auto; /* Don't grow, can shrink, base size auto */
+    max-width: 150px;
+    min-width: 120px; /* Slightly smaller min-width for very small screens */
+    width: calc(20% - 2rem); /* Try to take up about 20% of space minus gap */
+    margin: 0; /* Remove margin since we're using gap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
