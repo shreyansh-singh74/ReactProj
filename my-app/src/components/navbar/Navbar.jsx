@@ -12,16 +12,16 @@ const Menu = () => {
         <a href="#home">Home</a>
       </p>
       <p>
-        <a href="#wgpt3">What is Gpt3?</a>
+        <a href="#wgpt3">How It Works</a>
       </p>
       <p>
-        <a href="#possibility">OpenAi</a>
+        <a href="#possibility">Features</a>
       </p>
       <p>
-        <a href="#features">Case Studies</a>
+        <a href="#features">Examples</a>
       </p>
       <p>
-        <a href="#blog">Library</a>
+        <a href="#blog">Topics</a>
       </p>
     </div>
   );
@@ -33,7 +33,7 @@ const Navbar = () => {
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <img src={logo} alt="logo" />
+          <h2 className="logo-text">Easy Explainer</h2>
         </div>
 
         <div className="gpt3__navbar-links_container">
@@ -49,13 +49,13 @@ const Navbar = () => {
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
-            color="#fff"
+            color="#000"
             size={27}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
           <RiMenu3Line
-            color="#fff"
+            color="#000"
             size={27}
             onClick={() => setToggleMenu(true)}
           />

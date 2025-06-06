@@ -1,27 +1,24 @@
-import React from 'react'
-import {Features,Blog,Footer,Possibility,WhatGPT3,Header} from './containers'
-import { Navbar,Cta,Brand } from './components'
-import './App.css';
-import './index.css';
+import React, { useState } from "react";
+import Landing from "./components/landing/Landing";
+import ChatInterface from "./components/chat/ChatInterface";
+import "./App.css";
+import "./index.css";
 
 const App = () => {
+  const [currentPage, setCurrentPage] = useState("landing");
+
+  const goToChat = () => setCurrentPage("chat");
+  const goToLanding = () => setCurrentPage("landing");
+
   return (
-    <div className='App'>
-      <div className="gradient_bg">
-        <Navbar/>
-        <Header/>
-      </div>
-      <Brand/>
-      <WhatGPT3/>
-      <Features/>
-      <Possibility/>
-      <Cta/>
-      <Blog/>
-      <Footer/>
-
+    <div className="App">
+      {currentPage === "landing" ? (
+        <Landing onContinue={goToChat} />
+      ) : (
+        <ChatInterface onBack={goToLanding} />
+      )}
     </div>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;

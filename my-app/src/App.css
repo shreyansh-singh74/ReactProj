@@ -15,73 +15,71 @@ a {
 }
 
 .gradient_bg {
-  background: radial-gradient(
-    circle at 3% 25%,
-    rgba(0, 40, 83, 1) 0%,
-    rgba(4, 12, 24, 1) 100%
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(245, 245, 245, 1) 100%
   );
 }
 
-.gradient_text{
-    background: var(--gradient-text);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.gradient_text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.section_padding{
-    padding: 4rem 6rem;
+.section_padding {
+  padding: 4rem 6rem;
 }
 
-.section_margin{
-    margin: 4rem 6rem;
+.section_margin {
+  margin: 4rem 6rem;
 }
-
 
 .scale-up-center {
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-
- @-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
-  @keyframes scale-up-center {  
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
 /* For devices of width 700px - Tablets */
-@media screen and (max-width:700px){
-  .section_padding{
+@media screen and (max-width: 700px) {
+  .section_padding {
     padding: 4rem 6rem;
   }
-  .section_margin{
+  .section_margin {
     margin: 4rem 6rem;
   }
 }
 
 /* For devies of width 550 - Mobile Phones */
-@media screen and (max-width:550px){
-  .section_padding{
+@media screen and (max-width: 550px) {
+  .section_padding {
     padding: 4rem 2rem;
   }
-  .section_margin{
+  .section_margin {
     margin: 4rem 2rem;
   }
 }
-

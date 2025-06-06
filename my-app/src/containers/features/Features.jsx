@@ -1,42 +1,43 @@
-import React from 'react'
-import './features.css'
-import {Feature} from '../../components'
-
+import React from "react";
+import "./features.css";
+import { Feature } from "../../components";
 
 const Features = () => {
-
   const featuresData = [
     {
-      title: 'Improving end distrust instantly',
-      text: 'From they fine john he give of rich he. They age around much. They have you the most beautiful in the world.',
+      title: "Smart Analogies",
+      text: "Every complex topic gets compared to something familiar - like explaining DNA as a recipe book or WiFi as invisible mail delivery.",
     },
     {
-      title: 'Empowering the Future',
-      text: 'The future belongs to those who believe in the beauty of their dreams.',
+      title: "Teen-Friendly Language",
+      text: "No confusing jargon or academic words. Just clear, simple explanations that make sense the first time you read them.",
     },
     {
-      title: 'Innovating for Tomorrow',
-      text: 'Innovation distinguishes between a leader and a follower.',
+      title: "Real-World Examples",
+      text: "Learn about gravity through skydiving, understand economics through video game markets, and grasp physics through sports.",
     },
     {
-      title: 'Revolutionizing the Industry',
-      text: 'The only way to do great work is to love what you do.',
+      title: "Instant Understanding",
+      text: "Get explanations in seconds, not hours. Ask about anything from quantum physics to social media algorithms and understand immediately.",
     },
-  ]
+  ];
 
   return (
-    <div className='gpt3__features section__padding' id='features'>
-      <div className='gpt3__features-heading'>
-        <h1 className='gradient_text'>The Future is Now and You Just Need to Realize it. Step into Future Today & Make it Happen</h1>
-        <p>Request Early Access to Get Started</p>
+    <div className="gpt3__features section__padding" id="features">
+      <div className="gpt3__features-heading">
+        <h1 className="gradient_text">
+          Making Complex Simple is Our Superpower. Every Topic Becomes Crystal
+          Clear in Minutes
+        </h1>
+        <p>Discover What Makes Easy Explainer Special</p>
       </div>
-      <div className='gpt3__features-container'>
-         {featuresData.map((item,index) => (
+      <div className="gpt3__features-container">
+        {featuresData.map((item, index) => (
           <Feature key={index} title={item.title} text={item.text} />
-         ))}
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;
